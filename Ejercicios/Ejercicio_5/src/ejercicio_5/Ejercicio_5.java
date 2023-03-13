@@ -7,11 +7,16 @@ public class Ejercicio_5 {
   introducidos supere el límite inicial.
 */
     public static void main(String[] args) {
+        // Inicialización del Scanner
         Scanner leer = new Scanner(System.in);
+        // Obteniendo el número maximo a superar con la suma
         System.out.print("Escriba el limite de la suma: ");
         int maximo = leer.nextInt();
+        // inizialización y creación de variales num(almacena el número ingrado)
+        // y suma ( acumulador de la suma inicializado en 0)
         int num, suma = 0;
-
+        // opción 1 del proceso
+        // procedimiendo realizado utilizando un acumulador (suma)
         do {
             System.out.print("Ingrese un numero a sumar: ");
             num = leer.nextInt();
@@ -21,7 +26,7 @@ public class Ejercicio_5 {
         } while (maximo >= suma);
 
         System.out.println("fin do 1");
-
+        // 
         while (maximo <= suma) {
             System.out.print("Ingrese un numero a sumar: ");
             num = leer.nextInt();

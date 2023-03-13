@@ -11,10 +11,17 @@ public class Ejercicio_3 {
 */
     
     public static void main(String[] args) {
+        // Inicialización de Scanner
         Scanner leer = new Scanner(System.in);
+        // Obtención de Datos iniciales
         System.out.print("Escriba una frase o palabra:");
         String frase = leer.nextLine();
-        
+        /*
+        *   Verificación si la frase ingresada tiene un largo igual a 8
+        *   -si tiene 8 caracteres muestra un mensaje de correcto
+        *   -si tiene mas o menos de 8 caracteres muestra un mensaje indicando
+        *   el caso.
+        **/
         if (frase.length()==8) {
             System.out.println("El largo es el correcto"); 
         } else if (frase.length()<8){

@@ -8,10 +8,16 @@ public class Ejercicio_2 {
 * de Incorrecto. Nota: investigar la función equals() en Java.
 */    
     public static void main(String[] args) {
+        // Inicialización de Scanner
         Scanner leer = new Scanner(System.in);
+        // Obtención de datos y creación de variable de almacenamiento
         System.out.println("Escriba una frase: ");
         String frase;
         frase = leer.nextLine();
+        /*
+        * verificación si la palabra ingresada es eureka o no e impresión del 
+        * mensaje de respuesta
+        */
         if (frase.equals("eureka")) {
             System.out.println("Correcto");
         } else {
