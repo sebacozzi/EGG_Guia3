@@ -7,8 +7,8 @@ public class Ejercicio_4 {
      */
     public static void main(String[] args) {
         // Inicializaci+on de Scanner
-            Scanner leer = new Scanner(System.in);
-            // Obteniendo palabra o frase a chequear
+        Scanner leer = new Scanner(System.in);
+        // Obteniendo palabra o frase a chequear
         System.out.print("Escriba una frase o palabra: ");
         String frase = leer.nextLine();
         // pasando la primera letra a un string
@@ -18,10 +18,9 @@ public class Ejercicio_4 {
         // Verifica si la primera letra es "A"
         if (letra.equalsIgnoreCase("a")) {
             System.out.println("La letra es A");
-            
         } else {
             System.out.println("Incorrecto");
         }
     }
-    }
+}
     

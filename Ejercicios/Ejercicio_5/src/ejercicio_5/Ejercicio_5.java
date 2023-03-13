@@ -24,27 +24,27 @@ public class Ejercicio_5 {
 
             System.out.println("Suma: " + suma);
         } while (maximo >= suma);
-
+        suma=0;
         System.out.println("fin do 1");
-        // 
-        while (maximo <= suma) {
+        // opción 2 del proceso
+        // procedimiento realizado con while y un acumulador (suma)
+        while (maximo >= suma) {
             System.out.print("Ingrese un numero a sumar: ");
             num = leer.nextInt();
             suma += num;
             System.out.println("Suma: " + suma);
         }
-
-        System.out.println("fin do 1");
-
+        System.out.println("fin While 1");
+        // opción 3 del proceso
+        // procedimiento realizado con do y restando el número ingresado al limite
         do {
             System.out.print("Ingrese un numero a sumar: ");
             num = leer.nextInt();
             maximo -= num;
             System.out.println("Saldo Maximo: " + maximo);
         } while (maximo >= 0);
-
-
         
+        System.out.println("fin do 2");
     }
     
 }
