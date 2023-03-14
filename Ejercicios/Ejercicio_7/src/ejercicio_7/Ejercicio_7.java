@@ -21,10 +21,28 @@ public class Ejercicio_7 {
  
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        int cCorrectas,cIncorrectas;
-        
-        do
-            
+        int cCorrectas = 0, cIncorrectas = 0;
+        String FDE = "&&&&&";
+        String mensaje = "";
+        boolean esCorrecta;
+
+        do {
+            if (!mensaje.equals("")) {
+                if (    mensaje.length() == 5
+                        && mensaje.substring(4, 5).equalsIgnoreCase("O")
+                        && mensaje.substring(0, 1).equalsIgnoreCase("x")) {
+                    cCorrectas++;
+                } else {
+                    cIncorrectas++;
+                }
+            }
+            System.out.print("Ingrese una cadena: ");
+            mensaje = leer.next();
+        } while (!mensaje.equals(FDE));
+
+        System.out.println("Mensajes correctos: " + cCorrectas);
+        System.out.println("Mensajes incorrectos: " + cIncorrectas);
+
     }
-    
+
 }
